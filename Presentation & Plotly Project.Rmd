@@ -1,0 +1,18 @@
+---
+title: "Presentation & Plotly Project"
+author: "Sumit Mittal"
+date: "22/02/2022"
+output: html_document
+---
+
+```{r}
+data("presidents")
+library(plotly)
+```
+
+#
+
+```{r}
+#The presidents dataset is the (approximately) quarterly approval rating for the President of the United States from the first quarter of 1945 to the last quarter of 1974.
+plot_ly(x=time(presidents), y=presidents, type="bar")
+```
